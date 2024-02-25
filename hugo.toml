@@ -1,0 +1,18 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+[menu]
+  [[menu.nav]]
+  name = "posts"
+  url = "/"
+  weight = "1"
+  [[menu.nav]]
+  name = "about"
+  url = "/about"
+  weight = "2"
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
