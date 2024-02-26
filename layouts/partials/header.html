@@ -1,8 +1,15 @@
+<div class="header_wrap">
+    <div class="name"><a href="/">{{ .Site.Params.name }}</a></div>
+
     <div class="nav">
         {{ range .Site.Menus.nav }}
             <div class="nav_links">
                 <a href="{{ .URL }}">{{ .Name }}</a>
             </div>
         {{ end }}
-        </div>
     </div>
+
+    <div class="socials">
+        {{ partial "socials.html" . }}
+    </div>
+</div>

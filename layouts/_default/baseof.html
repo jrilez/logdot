@@ -10,8 +10,10 @@
   <main>
     {{ block "main" . }}{{ end }}
   </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
+  {{ if .Site.Params.showFooter }}
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
+  {{ end }}
 </body>
 </html>
