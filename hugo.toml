@@ -1,0 +1,42 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Log.'
+
+theme = 'logdot'
+
+[menu]
+  [[menu.nav]]
+  name = "posts"
+  url = "/posts"
+  weight = "1"
+  [[menu.nav]]
+  name = "about"
+  url = "/about"
+  weight = "2"
+
+[params]
+  name = 'log.'
+
+  # socials
+  email_url = "mailto://7gir6t34a@mozmail.com"
+  github_url = "https://github.com/jrilez/logdot"
+  # discord_url = "https://discord.com"
+  # facebook_url = "https://facebook.com"
+  # flickr_url = "https://flickr.com"
+  # gitlab_url = "https://gitlab.com"
+  # instagram_url = "https://instagram.com"
+  # linkedin_url = "https://linkedin.com"
+  # mastodon_url = "https://mastodon.social"
+  # matrix_url = "https://matrix.org"
+  # telegram_url = "https://telegram.org"
+  # tryhackme_url = "https://tryhackme.com"
+  # twitter_url = "https://twitter.com"
+  # xmpp_url = "https://xmpp.org"
+  # youtube_url = "https://youtube.com"
+
+  showFooter = false
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
