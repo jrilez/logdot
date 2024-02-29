@@ -35,6 +35,7 @@ theme = 'logdot'
   # youtube_url = "https://youtube.com"
 
   showFooter = false
+  showHome = false
 
 [markup.highlight]
   codeFences = true

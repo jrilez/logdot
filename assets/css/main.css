@@ -76,10 +76,15 @@ main {
   width: 40%;
 }
 
+.about_placeholder {
+  background-image: url('img/about_holder.png');
+  width: 300px;
+  height: 300px;
+}
+
 footer {
 
 }
-
 
 /*
 

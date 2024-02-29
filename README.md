@@ -39,6 +39,10 @@ This will create a new post in `/example/content/posts/` called `hello.md`. By d
 will be a draft. Open that file, add your content, and change `draft` to `false`. [Here's some
 markdown syntax references](https://dillinger.io/)
 
+#### About
+The two files that comprise the `/about` pages are `themes/logdot/content/about/index.md` and 
+`themes/logdot/layouts/_default/about.html`. 
+
 #### Code highlighting 
 To add code highlighting to your post, wrap the codeblock in highlight shortcode, where `bash`
 is the language you want highlighted. [These are the supported languages](https://github.com/alecthomas/chroma?tab=readme-ov-file#supported-languages) 
