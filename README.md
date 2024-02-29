@@ -11,13 +11,13 @@ justin@dev:~$ wget -O hugo.deb https://github.com/gohugoio/hugo/releases/downloa
 justin@dev:~$ sudo dpkg -i hugo.deb
 justin@dev:~$ rm -R hugo.deb
 # 'site' is an arbitrary directory, name doesn't matter
-justin@dev:~$ hugo new site site
-justin@dev:~$ cd site
-justin@dev:~/site$ git clone https://github.com/jrilez/logdot.git themes/logdot
+justin@dev:~$ hugo new site example
+justin@dev:~$ cd example
+justin@dev:~/example$ git clone https://github.com/jrilez/logdot.git themes/logdot
 # handle your hugo.toml however you want, or:
-justin@dev:~/site$ rm -R hugo.toml
-justin@dev:~/site$ cp themes/logdot/hugo.toml hugo.toml
-justin@dev:~/site$ hugo server
+justin@dev:~/example$ rm -R hugo.toml
+justin@dev:~/example$ cp themes/logdot/hugo.toml hugo.toml
+justin@dev:~/example$ hugo server
 # you should be able to see the theme now http://localhost:1313
 ```
 
@@ -35,7 +35,7 @@ To add content to your site, add a new post
 ```bash
 justin@dev:~/site$ hugo new post/hello.md
 ```
-This will create a new post in `/site/content/posts/` called `hello.md`. By default, that post
+This will create a new post in `/example/content/posts/` called `hello.md`. By default, that post
 will be a draft. Open that file, add your content, and change `draft` to `false`. [Here's some
 markdown syntax references](https://dillinger.io/)
 
