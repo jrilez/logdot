@@ -57,6 +57,6 @@ echo "Hello, world!"
 
 ## Credits
 
-minimal-bootstrap-hugo-theme ([zwbetz-gh](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme))
-
-poison ([lukeorth](https://github.com/lukeorth/poison))
+- minimal-bootstrap-hugo-theme ([zwbetz-gh](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme))
+- poison ([lukeorth](https://github.com/lukeorth/poison))
+- dillinger.io ([@joemccann](https://twitter.com/joemccann) and [@mrtnbroder](https://twitter.com/mrtnbroder))
