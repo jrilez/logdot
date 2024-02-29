@@ -36,6 +36,17 @@ theme = 'logdot'
 
   showFooter = false
 
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+
+[markup.highlight]
+  codeFences = true
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = true
+
+
 [module]
   [module.hugoVersion]
     extended = false
