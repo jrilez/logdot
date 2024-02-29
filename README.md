@@ -10,7 +10,7 @@
 justin@dev:~$ wget -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.123.6/hugo_0.123.6_linux-amd64.deb
 justin@dev:~$ sudo dpkg -i hugo.deb
 justin@dev:~$ rm -R hugo.deb
-# 'site' is an arbitrary directory, name doesn't matter
+# 'example' is an arbitrary directory, name doesn't matter
 justin@dev:~$ hugo new site example
 justin@dev:~$ cd example
 justin@dev:~/example$ git clone https://github.com/jrilez/logdot.git themes/logdot
