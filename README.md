@@ -53,6 +53,6 @@ echo "Hello, world!"
 
 ## Credits
 
-[zwbetz-gh](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme)
+minimal-bootstrap-hugo-theme ([zwbetz-gh](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme))
 
-[lukeorth](https://github.com/lukeorth/poison)
+poison ([lukeorth](https://github.com/lukeorth/poison))
