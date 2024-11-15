@@ -1,15 +1,15 @@
-<div class="header_wrap">
-    <div class="name"><a href="/">{{ .Site.Params.name }}</a></div>
+<div class="name"><a href="/">{{ .Site.Params.name }}</a></div>
 
-    <div class="nav">
-        {{ range .Site.Menus.nav }}
-            <div class="nav_links">
-                <a href="{{ .URL }}">{{ .Name }}</a>
-            </div>
-        {{ end }}
-    </div>
+<div class="nav">
+    {{ $currentPage := trim .RelPermalink "/"}}
+    {{ range .Site.Menus.nav }}
+        {{ $currentURL := trim .URL "/"}}
+        <div class="nav_links">
+            <a href="{{ .URL }}" class="{{ if eq $currentPage $currentURL }}active{{ end }}">{{ .Name }}</a>
+        </div>
+    {{ end }}
+</div>
 
-    <div class="socials">
-        {{ partial "socials.html" . }}
-    </div>
+<div class="socials">
+    {{ partial "socials.html" . }}
 </div>
