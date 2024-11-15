@@ -2,7 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Log.'
 
-theme = 'logdot'
+theme = 'Logdot'
 
 [menu]
   [[menu.nav]]
@@ -15,11 +15,11 @@ theme = 'logdot'
   weight = "2"
 
 [params]
-  name = 'log.'
+  name = 'log://'
 
   # socials
   email_url = "mailto://7gir6t34a@mozmail.com"
-  github_url = "https://github.com/jrilez/logdot"
+  github_url = "https://github.com/jrilez/Logdot"
   # discord_url = "https://discord.com"
   # facebook_url = "https://facebook.com"
   # flickr_url = "https://flickr.com"
@@ -34,7 +34,7 @@ theme = 'logdot'
   # xmpp_url = "https://xmpp.org"
   # youtube_url = "https://youtube.com"
 
-  showFooter = false
+  showFooter = false # incomplete
   showHome = false
 
 [markup.highlight]

@@ -33,15 +33,17 @@ Now you should be able to open a browser to https://localhost:1313 and see your 
 #### Add content
 To add content to your site, add a new post
 ```bash
-justin@dev:~/site$ hugo new post/hello.md
+justin@dev:~/site$ hugo new posts/hello.md
 ```
 This will create a new post in `/example/content/posts/` called `hello.md`. By default, that post
 will be a draft. Open that file, add your content, and change `draft` to `false`. [Here's some
 markdown syntax references](https://dillinger.io/)
 
 #### About
-The two files that comprise the `/about` pages are `themes/logdot/content/about/index.md` and 
-`themes/logdot/layouts/_default/about.html`. 
+To create the `about` page:
+```
+hugo new about/index.md
+```
 
 #### Code highlighting 
 To add code highlighting to your post, wrap the codeblock in highlight shortcode, where `bash`

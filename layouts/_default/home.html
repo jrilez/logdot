@@ -3,13 +3,4 @@
     Welcome to Logdot, a super simple (and probably incomplete) Hugo theme.
   {{ end }}
 
-  {{ .Content }}
-    {{ range where .Site.RegularPages "Section" "posts" }}  
-      <h2>
-        <a href="{{ .RelPermalink }}">
-          {{ .LinkTitle }}
-        </a>
-      </h2>
-    {{ .Summary }}
-  {{ end }}
 {{ end }}
