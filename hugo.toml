@@ -2,7 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Log.'
 
-theme = 'Logdot'
+theme = 'logdot'
 
 [menu]
   [[menu.nav]]
