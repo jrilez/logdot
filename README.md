@@ -17,7 +17,7 @@ $ cd example
 $ git clone https://github.com/jrilez/logdot.git themes/logdot
 
 # configure hugo.toml manually or use default site:
-$ cp themes/logdot/hugo.toml hugo.toml
+$ cp themes/logdot/hugo.toml .
 ```
 
 ## Build your site
@@ -70,14 +70,21 @@ $ hugo new posts/hello.md
 This will create a new post in `/example/content/posts/` called `hello.md`. By default, that post
 will be a draft.
 
-Sidenote: when you run `hugo -D`, it builds your site and includes drafts. So any posts that you didn't manually set `draft` to `false`, they will still show.
+Sidenote: when you run `hugo -D`, it builds your site and includes drafts. So any posts that you didn't manually set `draft` to `false`, will still show.
 
 
 [Here's some
 markdown syntax references](https://dillinger.io/)
 
 #### About
-The About page will not show until you [build the site](#build-your-site). If you've done that, you can edit your About page
+The About page will be the theme's default until you edit it. Copy the about page to your site from the theme:
+```
+$ cp -r themes/logdot/content/about content
+```
+
+To make a custom About page, edit `/example/content/about/_index.md`. I used [`_index`](https://gohugo.io/content-management/organization/#index-pages-_indexmd) so that it doesn't use the `single.html` template. 
+
+Make sure to build your site when you're ready to publish.
 
 #### Code highlighting 
 To add code highlighting to your post, wrap the codeblock in highlight shortcode, where `bash`
