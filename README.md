@@ -5,19 +5,52 @@ Intentionally over-verbose.
 
 ## Installation
 
-```bash
+```shell
 # Get latest Hugo version 
 # (https://github.com/gohugoio/hugo/releases)
 $ wget https://github.com/gohugoio/hugo/releases/download/v0.123.6/hugo_0.123.6_linux-amd64.deb
 $ sudo dpkg -i *.deb; rm -R *.deb
+
 # 'example' is an arbitrary directory, pick whatever you want
 $ hugo new site example
 $ cd example
 $ git clone https://github.com/jrilez/logdot.git themes/logdot
+
 # configure hugo.toml manually or use default site:
 $ cp themes/logdot/hugo.toml hugo.toml
+```
+
+## Build your site
+```
+# if you DON'T want to include drafts, do not add the -D key
+$ hugo -D
+```
+
+To view the site, start the local development server
+```
 $ hugo server
-# you should be able to see the theme now http://localhost:1313
+Watching for changes in /example/{archetypes,assets,content,data,i18n,layouts,static,themes}
+Watching for config changes in /example/hugo.toml, /home/justin/log.riley.work/themes/Logdot/hugo.toml
+Start building sites …
+hugo v0.138.0 linux/amd64 BuildDate=2024-11-06T11:22:34Z VendorInfo=gohugoio
+
+
+                   | EN
+-------------------+-----
+  Pages            | 11
+  Paginator pages  |  0
+  Non-page files   |  0
+  Static files     |  9
+  Processed images |  0
+  Aliases          |  0
+  Cleaned          |  0
+
+Built in 61 ms
+Environment: "development"
+Serving pages from disk
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
 ```
 
 If you're installing/running hugo somewhere besides your localhost, you'll need an SSH tunnel
@@ -30,19 +63,21 @@ Now you should be able to open a browser to https://localhost:1313 and see your 
 ## Configuration
 
 #### Add content
-To add content to your site, add a new post
+To add content to your site, start by adding a new post
 ```bash
-/site$ hugo new posts/hello.md
+$ hugo new posts/hello.md
 ```
 This will create a new post in `/example/content/posts/` called `hello.md`. By default, that post
-will be a draft. Open that file, add your content, and change `draft` to `false`. [Here's some
+will be a draft.
+
+Sidenote: when you run `hugo -D`, it builds your site and includes drafts. So any posts that you didn't manually set `draft` to `false`, they will still show.
+
+
+[Here's some
 markdown syntax references](https://dillinger.io/)
 
 #### About
-To create the `about` page:
-```
-hugo new about/index.md
-```
+The About page will not show until you [build the site](#build-your-site). If you've done that, you can edit your About page
 
 #### Code highlighting 
 To add code highlighting to your post, wrap the codeblock in highlight shortcode, where `bash`
