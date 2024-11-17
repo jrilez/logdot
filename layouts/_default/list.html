@@ -1,14 +1,16 @@
 {{ define "main" }}
   <h1>
-    {{ .Title }}
+    {{ partial "search_form.html" . }}
   </h1>
-  {{ .Content }}
-    {{ range .Pages }}
-      <h2>
-        <a href="{{ .RelPermalink }}">
-          |--{{ .LinkTitle }}
-        </a>
-      </h2>
-      {{ .Summary }}
-    {{ end }}
+  <div class="main_content">
+    {{ .Content }}
+      {{ range .Pages }}
+        <h2>
+          <a href="{{ .RelPermalink }}">
+            |--{{ .LinkTitle }}
+          </a>
+        </h2>
+        {{ .Summary }}
+      {{ end }}
+    </div>
 {{ end }}

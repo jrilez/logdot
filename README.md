@@ -1,12 +1,14 @@
 # Logdot
 
-Intentionally over-verbose.
+A super simple minimal Hugo theme.
+
+For the **demo** and **thorough** installation instructions, check out the [guide](http://localhost:1313/posts/how-to-install-hugo-configure-logdot/).
 <!-- ## Features -->
 
 ## Installation
 
 ```shell
-# Get latest Hugo version 
+# Get latest Hugo version, install it, delete .deb file
 # (https://github.com/gohugoio/hugo/releases)
 $ wget https://github.com/gohugoio/hugo/releases/download/v0.123.6/hugo_0.123.6_linux-amd64.deb
 $ sudo dpkg -i *.deb; rm -R *.deb
@@ -30,7 +32,7 @@ To view the site, start the local development server
 ```
 $ hugo server
 Watching for changes in /example/{archetypes,assets,content,data,i18n,layouts,static,themes}
-Watching for config changes in /example/hugo.toml, /home/justin/log.riley.work/themes/Logdot/hugo.toml
+Watching for config changes in /example/hugo.toml, /example/themes/logdot/hugo.toml
 Start building sites …
 hugo v0.138.0 linux/amd64 BuildDate=2024-11-06T11:22:34Z VendorInfo=gohugoio
 
@@ -77,14 +79,12 @@ Sidenote: when you run `hugo -D`, it builds your site and includes drafts. So an
 markdown syntax references](https://dillinger.io/)
 
 #### About
-The About page will be the theme's default until you edit it. Copy the about page to your site from the theme:
+Hugo will use the theme's About page until you create your own, so copy it to your root file, `/example/content`, and edit it there.
 ```
-$ cp -r themes/logdot/content/about content
+$ cp -r themes/logdot/layouts/about layouts
 ```
 
-To make a custom About page, edit `/example/content/about/_index.md`. I used [`_index`](https://gohugo.io/content-management/organization/#index-pages-_indexmd) so that it doesn't use the `single.html` template. 
-
-Make sure to build your site when you're ready to publish.
+And then edit `/example/layouts/about/list.html` with your content.
 
 #### Code highlighting 
 To add code highlighting to your post, wrap the codeblock in highlight shortcode, where `bash`
@@ -103,3 +103,4 @@ echo "hello"
 - minimal-bootstrap-hugo-theme ([zwbetz-gh](https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme))
 - poison ([lukeorth](https://github.com/lukeorth/poison))
 - dillinger.io ([@joemccann](https://twitter.com/joemccann) and [@mrtnbroder](https://twitter.com/mrtnbroder))
+- [notable.app](https://notable.app/)

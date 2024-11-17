@@ -74,8 +74,19 @@ header {
   text-decoration: underline;
 }
 
-.nav_links a.active{
+.nav_links a.active {
   color: #FF6;
+}
+
+.search_form input {
+  background-color: #F5F5F5;
+  border: 0;
+  outline: none;
+
+  font-family: "IBM Plex Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }
 
 .socials {
@@ -87,7 +98,12 @@ header {
 main {
   margin-top: 2rem;
   margin-left: 20rem;
-  width: 40%;
+  width: 50%;
+}
+
+.main_content {
+  position: absolute;
+  top: 10rem;
 }
 
 .about_placeholder {
