@@ -18,8 +18,8 @@ theme = 'logdot'
   name = 'log://'
 
   # socials
-  email_url = "mailto://7gir6t34a@mozmail.com"
-  github_url = "https://github.com/jrilez/Logdot"
+  # email_url = "mailto://"
+  github_url = "https://github.com/jrilez/logdot"
   # discord_url = "https://discord.com"
   # facebook_url = "https://facebook.com"
   # flickr_url = "https://flickr.com"
@@ -35,14 +35,7 @@ theme = 'logdot'
   # youtube_url = "https://youtube.com"
 
   showFooter = false # incomplete
-  showHome = false
-
-[markup.highlight]
-  codeFences = true
-  lineNoStart = 1
-  lineNos = false
-  lineNumbersInTable = true
-
+  showHome = true
 
 [module]
   [module.hugoVersion]
