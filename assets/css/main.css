@@ -6,6 +6,10 @@ body {
   color: #222;
 }
 
+p {
+  margin: 0;
+}
+
 h1 {
 }
 
