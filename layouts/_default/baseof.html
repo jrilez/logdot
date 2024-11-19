@@ -9,11 +9,11 @@
   </header>
   <main>
     {{ block "main" . }}{{ end }}
-  </main>
-  {{ if .Site.Params.showFooter }}
+    {{ if .Site.Params.showFooter }}
     <footer>
       {{ partial "footer.html" . }}
     </footer>
   {{ end }}
+  </main>
 </body>
 </html>

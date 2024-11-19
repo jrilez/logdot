@@ -1,5 +1,6 @@
 {{ define "main" }}
-  <div class="main_content">
+{{ partial "search.html" . }}
+  <div class="main_content list">
     {{ .Content }}
       {{ range .Pages }}
         <h2 class="list">

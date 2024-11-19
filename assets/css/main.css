@@ -66,6 +66,15 @@ pre code {
   line-height: 1.5;
 }
 
+code {
+  background-color: #2e2e2e; /* Match block background */
+  color: #f8f8f2; /* Match block text color */
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem; /* Slightly smaller than block code */
+}
+
 .name,
 .name a,
 .nav a,
@@ -104,7 +113,7 @@ pre code {
   color: #FF6;
 }
 
-.search_form input {
+#search-form input {
   background-color: #F5F5F5;
   border: 0;
   outline: none;
@@ -113,6 +122,40 @@ pre code {
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
+  margin-top: 0.7rem;
+}
+
+#search-results {
+  position: relative;
+  margin-top: 5.2rem;
+}
+
+#search-results h2 {
+  text-decoration: none;
+}
+
+#clear-search {
+  background-color: transparent;
+  border: none;
+  font-size: 24px; 
+  color: #333; 
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  width: 30px; /* Control width */
+  height: 30px; /* Control height */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add a hover effect to change the background color when hovering */
+#clear-search:hover {
+  background-color: #dedede; /* Light background on hover */
+  color: #000; /* Change symbol color on hover */
+}
+
+/* Optional: focus effect for accessibility */
+#clear-search:focus {
+  background-color: #9c9c9c;
 }
 
 .socials {
@@ -129,7 +172,13 @@ main {
 .main_content {
   position: absolute;
   top: 9rem;
-  width: 60%;
+  width: 40%;
+  padding-bottom: 8rem;
+}
+
+.main_content .list {
+  position: relative;
+  top: 0.5rem;
 }
 
 .about_placeholder {
