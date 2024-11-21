@@ -1,0 +1,12 @@
+<form action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' method="get" id="search-form" role="search" aria-label="Site Search">
+    <input 
+        type="text" 
+        id="search" 
+        placeholder="search..." 
+        autocomplete="off" 
+        aria-label="Search input" 
+    />
+    <button type="button" id="clear-search" aria-label="Clear search">
+        &times;
+    </button>
+</form>

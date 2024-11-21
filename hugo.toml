@@ -1,23 +1,51 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-US'
-title = 'My New Hugo Site'
+title = 'Log.'
 
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
+theme = 'logdot'
 
-[[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = 20
+[menu]
+  [[menu.nav]]
+  name = "posts"
+  url = "/posts"
+  weight = "1"
+  [[menu.nav]]
+  name = "about"
+  url = "/about"
+  weight = "2"
 
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
+[params]
+  name = 'log://'
+
+  # socials
+  # email_url = "mailto://"
+  github_url = "https://github.com/jrilez/logdot"
+  # discord_url = "https://discord.com"
+  # facebook_url = "https://facebook.com"
+  # flickr_url = "https://flickr.com"
+  # gitlab_url = "https://gitlab.com"
+  # instagram_url = "https://instagram.com"
+  # linkedin_url = "https://linkedin.com"
+  # mastodon_url = "https://mastodon.social"
+  # matrix_url = "https://matrix.org"
+  # telegram_url = "https://telegram.org"
+  # tryhackme_url = "https://tryhackme.com"
+  # twitter_url = "https://twitter.com"
+  # xmpp_url = "https://xmpp.org"
+  # youtube_url = "https://youtube.com"
+
+  showFooter = false # incomplete
+  showHome = true
 
 [module]
   [module.hugoVersion]
     extended = false
     min = "0.116.0"
+
+[outputs]
+  home = ["HTML", "JSON"]
+
+[outputFormats]
+  [outputFormats.JSON]
+    mediaType = "application/json"
+    baseName = "index"

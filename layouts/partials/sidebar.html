@@ -1,0 +1,17 @@
+<div class="logo">
+    <a href="/">
+        {{ site.Title }}
+    </a>
+</div>
+<div class=""></div>
+<div class="nav">
+    {{ $currentPage := trim .RelPermalink "/"}}
+    {{ range .Site.Menus.nav }}
+        {{ $currentURL := trim .URL "/"}}
+            <a href="{{ .URL }}" class="{{ if eq $currentPage $currentURL }}active{{ end }}">{{ .Name }}</a>
+    {{ end }}
+</div>
+
+<div class="socials">
+    {{ partial "socials.html" . }}
+</div>
