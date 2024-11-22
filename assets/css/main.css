@@ -55,6 +55,15 @@ code {
   overflow-wrap: break-word;
 }
 
+@media screen and (max-width: 480px) { /* Adjust for smaller devices */
+  pre code {
+    font-size: 0.8rem;
+  }
+  code {
+    font-size: 0.75rem;
+  }
+}
+
 /* -------------------- */
 /* sidebar              */
 
