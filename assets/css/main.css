@@ -138,6 +138,14 @@ main {
   padding: 20px;
 }
 
+.main-content {
+  width: 50%;
+}
+
+.about-content {
+  width: 20%;
+}
+
 .page-title {
   display: flex;
   justify-content: flex-start;

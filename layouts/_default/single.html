@@ -9,7 +9,7 @@
       <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
     {{ end }}
   </div>
-  <div class="main-content">
+  <div class="{{ if eq .Title "About" }}about-content{{ else }}main-content{{ end }}">
     {{ .Content }}
   </div>
   <div>{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
