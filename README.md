@@ -1,6 +1,6 @@
 # Logdot
 
-A super simple minimal Hugo theme. Check out the [demo](https://log.riley.work/demo)
+A super simple minimal Hugo theme. <!-- Check out the [demo](https://log.riley.work/demo) -->
 ![Logdot screenshot](./static/img/how-to-install-hugo-configure-logdot-1.png)
 
 
